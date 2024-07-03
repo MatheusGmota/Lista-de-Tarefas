@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+
+        <section>
+            <div class="wrap-content">
+            <h2>Lista de Tarefas</h2>
+
+                <div class="form">
+                    <form action="#" method="post" onsubmit="return false">
+                        <input type="text" placeholder="Nome da tarefa" minlength="3">
+                        <textarea name="descricao" id="descricao" placeholder="Descrição da tarefa" style="display: none;" maxlength="240"></textarea>
+                        <button id="btn-adicionar">Adiconar</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="tarefa-container">
+
+                <div class="item item-1" id="tarefa1">
+                    <div class="tarefa-info">
+                        <h3 id="nomeTarefa">Nome da tarefa</h3>
+                        <h3 id="data-hora">03/07/2024</h3>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-1">edit</div>
+                        <div class="icon-2">lixeira</div>
+                        <div class="icon-3">checkbox</div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
