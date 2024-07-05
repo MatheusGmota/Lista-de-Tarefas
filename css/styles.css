@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    min-height: 100vh;
+    background-color: #0e0e11;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.wrap-content, .wrap-tarefa {
+    width: 46vw;
+    border-radius: 10px;
+    background-color: #2F2F2F;
+    padding: 3%;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        max-width: 80%;
+        min-width: 80%;
+    }
+    
+    input[type='text'], #descricao{
+        width: 100%;
+        height: 5vh;
+        padding: 2%;
+        border: 1px solid #b63bff;
+        border-radius: 5px;
+        color: #fbf3ff;
+        background-color: transparent !important;
+        outline: 0;
+    }
+
+    input[type='text']::placeholder, #descricao::placeholder {
+        color: #bbbbbb;
+        font-size: 0.7rem;
+        font-family: 'Rubik';
+    }
+
+    #descricao {    
+        resize: none;
+        min-height: 10vh;
+    }
+}
+
+
+
+#btn-adicionar {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    min-width: 5.5vw;
+    height: 4vh;
+    padding: 1%;
+    color: #fbf3ff;
+    background-color: #B63BFF;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+}
+
+#btn-adicionar:hover {
+    background-color: #a315ff;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.wrap-tarefa {
+    overflow-x: hidden;
+} 
+
+.wrap-tarefa ul {
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    
+
+    li {
+        min-height: 6vh;
+        padding: 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fbf4ff;
+        list-style: none;
+        border-radius: 5px;
+        background: linear-gradient(to left,#480269, #a315ff);
+
+        .data {
+            font-size: 0.8rem;
+        }
+
+        div {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        div > .icon {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+        }
+
+    }
+}
+
+a {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    width: 90%;
+}
+
+i {
+    color: #fbf4ff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn-editar i:hover {
+    color: #a315ff;
+}
+
+.btn-deletar i:hover {
+    color: #dc2626;
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
